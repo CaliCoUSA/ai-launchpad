@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaliCo AI Launch Pad</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        #container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            padding: 30px 40px;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #1a1a1a;
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            background-color: #fff;
+            border-color: #007aff;
+            color: #007aff;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>CaliCo AI Launch Pad</h1>
+
+        <h2>LLMs & Research</h2>
+        <div class="grid">
+            <a href="https://gemini.google.com/" class="button" target="_blank" rel="noopener noreferrer">
+                Gemini
+            </a>
+            <a href="https://chatgpt.com/" class="button" target="_blank" rel="noopener noreferrer">
+                ChatGPT
+            </a>
+            <a href="https://claude.ai/" class="button" target="_blank" rel="noopener noreferrer">
+                Claude
+            </a>
+            <a href="https://grok.com/" class="button" target="_blank" rel="noopener noreferrer">
+                Grok
+            </a>
+            <a href="https://meta.ai/" class="button" target="_blank" rel="noopener noreferrer">
+                Llama (Meta AI)
+            </a>
+            <a href="https://notebooklm.google.com/" class="button" target="_blank" rel="noopener noreferrer">
+                NotebookLM
+            </a>
+        </div>
+
+        <h2>Creative AI Tools</h2>
+        <div class="grid">
+            <a href="https://www.suno.ai/" class="button" target="_blank" rel="noopener noreferrer">
+                Suno
+            </a>
+            <a href="https://www.udio.com/" class="button" target="_blank" rel="noopener noreferrer">
+                Udio
+            </a>
+            <a href="https://elevenlabs.io/" class="button" target="_blank" rel="noopener noreferrer">
+                ElevenLabs
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
