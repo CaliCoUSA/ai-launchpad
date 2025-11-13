@@ -7,9 +7,20 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     
     <style>
+        /* Define Brand Colors as CSS Variables for easy changes */
+        :root {
+            --color-charcoal: #36454F;
+            --color-purple: #673AB7;
+            --color-yellow: #FFC107;
+            --color-light-bg: #f4f7f6;
+            --color-white: #ffffff;
+            --color-grey-border: #ddd;
+            --color-grey-bg: #f9f9f9;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f7f6;
+            background-color: var(--color-light-bg);
             margin: 0;
             padding: 40px;
             display: flex;
@@ -21,22 +32,22 @@
         #container {
             max-width: 800px;
             width: 100%;
-            background-color: #ffffff;
+            background-color: var(--color-white);
             border-radius: 12px;
             box-shadow: 0 8px 30px rgba(0,0,0,0.08);
             padding: 30px 40px;
             box-sizing: border-box;
         }
         h1 {
-            color: #1a1a1a;
+            color: var(--color-charcoal);
             text-align: center;
-            border-bottom: 2px solid #eee;
+            border-bottom: 3px solid var(--color-yellow); /* Yellow Accent */
             padding-bottom: 20px;
             margin-top: 0;
             margin-bottom: 25px;
         }
         h2 {
-            color: #333;
+            color: var(--color-charcoal);
             font-size: 1.2em;
             font-weight: 600;
             margin-top: 25px;
@@ -55,11 +66,11 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
+            background-color: var(--color-grey-bg);
+            border: 1px solid var(--color-grey-border);
             border-radius: 10px;
             text-decoration: none;
-            color: #333;
+            color: var(--color-charcoal); /* Charcoal Text */
             font-weight: 600;
             font-size: 16px;
             text-align: center;
@@ -68,9 +79,9 @@
         .button:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            background-color: #fff;
-            border-color: #007aff;
-            color: #007aff;
+            background-color: var(--color-white);
+            border-color: var(--color-purple); /* Royal Purple Accent */
+            color: var(--color-purple); /* Royal Purple Text */
         }
     </style>
 </head>
@@ -109,7 +120,7 @@
             <a href="https://www.udio.com/" class="button" target="_blank" rel="noopener noreferrer">
                 Udio
             </a>
-            <a href="https://elevenlabs.io/" class="button" target="_blank" rel="noopener noreferrer">
+            <a href="httpss://elevenlabs.io/" class="button" target="_blank" rel="noopener noreferrer">
                 ElevenLabs
             </a>
         </div>
